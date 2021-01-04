@@ -7,6 +7,10 @@ const addElement = () => {
 
   if (number % 5 === 0) {
     div.classList.add("circle");
+    if (number % 10 === 0) {
+      div.style.color = "indigo";
+      div.style.borderColor = "indigo";
+    }
   }
 
   document.body.appendChild(div);
